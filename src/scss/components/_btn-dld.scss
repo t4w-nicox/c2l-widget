@@ -1,0 +1,91 @@
+.btn-dld{
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-width: var(--size-14);
+    box-shadow: var(--btn-shadow-x) var(--btn-shadow-y) var(--btn-shadow-blur) var(--btn-shadow-spread) var(--clr-shadow);
+    border-radius: var(--btn-radius);
+
+
+    &__link,
+    &__toggle{
+        background-color: var(--clr-primary);
+        color: var(--clr-onprimary);
+        height: var(--btn-height);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: var(--btn-border-size) solid var(--clr-primary-dark);
+    }
+
+    &__link{        
+        flex: 1;
+        justify-content: flex-start;
+        gap: var(--size-2);
+        padding-left: var(--btn-padding);
+        border-radius: var(--btn-radius) 0 0 var(--btn-radius);
+        border-right: 0;
+        font-weight: bold;
+        font-size: var(--fs-400);
+
+        span{
+            flex: 1;
+            text-align: center;
+        }
+        
+        &.is-active{
+            border-radius: var(--btn-radius) 0 0 0;            
+        }
+    }
+    
+    &__toggle{
+        width: var(--btn-height);
+        border-radius: 0 var(--btn-radius) var(--btn-radius) 0;
+        border-left: 0;
+        cursor: pointer;
+
+        i{
+            transform: rotate(90deg);
+        }
+        
+        &.is-active{
+            border-radius: 0 var(--btn-radius) 0 0;
+            i{
+                transform: rotate(-90deg);
+            }
+        }
+    }
+
+    &__collapse{
+        position: absolute;
+        width: 100%;
+        top: var(--btn-height);
+        left: 0;
+        background-color: var(--clr-surface);
+        color: var(--clr-onsurface);
+        box-shadow: var(--clr-shadow) 0px 0px 15px 0px;
+        border-radius: 0 0 var(--btn-radius) var(--btn-radius);
+        border: var(--btn-border-size) solid var(--clr-surface-dark);
+        border-top: 0;
+        display: none;
+        visibility: hidden;
+        padding: var(--size-4);
+
+        a{
+            display: flex;
+            align-items: center;
+            gap: var(--size-2);
+            font-weight: var(--fw-medium);
+
+            &:hover{
+                color: var(--clr-primary);
+            }
+        }
+
+        &.is-active{
+            display: grid;
+            visibility: visible;
+            gap: var(--size-2);
+        }
+    }
+}

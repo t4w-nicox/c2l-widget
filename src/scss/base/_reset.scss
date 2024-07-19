@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul, li{
+    margin: 0;
+    padding:0;
+}
+
+ul,ol,li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+i{
+    margin: 0;
+    padding: 0;
+}
+
+
+span{
+    margin: 0;
+    padding: 0;
+}
+
+
+button,
+input,
+optgroup,
+select,
+textarea,
+fieldset {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+:focus{
+    outline: none;
+}
+
+figure{
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+button{
+    background-color: inherit;
+}
+
+input[type="text"]{
+    margin: 0;
+    border-radius: 0;
+}

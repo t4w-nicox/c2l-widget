@@ -1,0 +1,29 @@
+.pricing{
+    font-family: var(--ff-secondary);
+    display: flex;
+    align-items: baseline;
+    gap: var(--size-2);
+
+    &__price{
+        font-weight: var(--fw-black);    
+        font-size: var(--size-6);
+    }
+    
+    &__oldprice{
+        color: var(--clr-primary);
+        font-size: var(--size-4);   
+        
+        span{
+            text-decoration-line: line-through;
+            font-weight: var(--fw-bold);
+        }
+    }
+}
+
+.pricing--variant{ 
+    @include media-sm{
+        flex-direction: column;
+        align-items: center;
+        gap: 0
+    }
+}

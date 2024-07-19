@@ -1,0 +1,14 @@
+.oss{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--size-1);
+
+    &__icon{
+        color: var(--clr-neutral);
+
+        &.is-active{
+            color: var(--clr-onsurface);
+        }
+    }
+}

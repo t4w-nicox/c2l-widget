@@ -1,0 +1,42 @@
+// 1. Media Queries
+// Mobile - Smartphone (Portrait)
+@mixin media-xs{
+    @media screen and (min-width: map-get($breakpoints, xs)) and (max-width: map-get($breakpoints, sm)) {
+        @content;
+    }
+}
+
+// Mobile - Smartphone (paysage)
+@mixin media-sm{
+    @media screen and (min-width: map-get($breakpoints, sm)) {
+        @content;
+    }
+}
+
+// Tablet (Portrait)
+@mixin media-md{
+    @media screen and (min-width: map-get($breakpoints, md)) {
+        @content;
+    }
+}
+
+//Tablet (paysage), Laptop
+@mixin media-lg{
+    @media screen and (min-width: map-get($breakpoints, lg)) {
+        @content;
+    }
+}
+
+// Laptops, Desktop
+@mixin media-xl{
+    @media screen and (min-width: map-get($breakpoints, xl)) {
+        @content;
+    }
+}
+
+//Widescreen
+@mixin media-xxl{
+    @media screen and (min-width: map-get($breakpoints, xxl)) {
+        @content;
+    }
+}
